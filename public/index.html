@@ -1,10 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="movieSearchApp"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Angular Movie Search</title>
+    <meta name="description" content="Simple AngularJS Boilerplate to kick start your new project with SASS support and Gulp watch/build tasks">
+    <!-- mobile meta -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- or, set /favicon.ico for IE10 win -->
+    <meta name="msapplication-TileColor" content="#f01d4f">
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!-- endbuild -->
 </head>
 <body>
-    HEY THERE!!
+<div ui-view class="main-wrapper"></div>
 </body>
+
+<!-- Vendors -->
+<!-- build:nonangularlibs js/nonangularlibs.js -->
+<script type="text/javascript" src="/lib/vendor/jquery-1.11.2.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<!-- endbuild -->
+
+<!-- Non-angular libraries -->
+<!-- build:libs js/libs.js -->
+<script type="text/javascript" src="/lib/vendor/lodash.min.js"></script>
+<!-- endbuild -->
+
+<!-- Angular external libraries for application -->
+<!-- build:angularlibs js/angularlibs.js -->
+<script src="/lib/angular/angular.js"></script>
+<script src="/lib/angular/angular-route.min.js"></script>
+<script src="/lib/angular/angular-ui-router.js"></script>
+<script src="/lib/angular/angular-resource.min.js"></script>
+<script src="/lib/angular/angular-sanitize.min.js"></script>
+<script src="/lib/vendor/angular-youtube-embed.min.js"></script>
+<script src="/lib/vendor/slick.js"></script>
+<script src="/lib/angular/slick.js"></script>
+
+<!-- endbuild -->
+
+<!-- Angular components -->
+<!-- build:appcomponents js/appcomponents.js -->
+<script type="text/javascript" src="/app/app.js"></script>
+<script type="text/javascript" src="/app/controller.js"></script>
+<script type="text/javascript" src="views/home/home.js"></script>
+<script type="text/javascript" src="/views/detail/detail.js"></script>
+<script type="text/javascript" src="components/services/BoxOfficeService.js"></script>
+<script type="text/javascript" src="components/services/queryService.service.js"></script>
+<!-- endbuild -->
+<!-- Application sections -->
+<!-- build:mainapp js/mainapp.js -->
+<!-- endbuild -->
 </html>
