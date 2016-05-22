@@ -14,10 +14,10 @@ config.$inject = ['$urlRouterProvider', '$locationProvider', '$httpProvider', '$
 function config($urlRouterProvider, $locationProvider, $httpProvider, $compileProvider, $stateProvider) {
     $locationProvider.html5Mode(false);
     //$httpProvider.interceptors.push('authInterceptor');
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
     $stateProvider
         .state('home', {
-            url: '/home',
+            url: '/',
             views: {
                 "": {
                     templateUrl: 'views/home/home.html',
