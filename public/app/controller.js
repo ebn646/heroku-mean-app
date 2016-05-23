@@ -35,7 +35,7 @@ angular.module('movieSearchApp')
         return service;
     })
     .factory('DetailService', function ($log, $resource) {
-        var url = 'http://api.themoviedb.org/3/movie/:id';
+        var url = '//api.themoviedb.org/3/movie/:id';
         var apikey = 'a47daf25c6cd4e3f68c4ebee27270542';
 
         return $resource(url,

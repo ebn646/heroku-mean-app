@@ -356,7 +356,7 @@ ul {
 .main-wrapper, .vid, h1 {
   max-width: 650px;
   margin: 0 auto;
-  background: grey; }
+  background: black; }
   .main-wrapper img, .vid img, h1 img {
     max-width: 100%; }
   .main-wrapper .video-container, .vid .video-container, h1 .video-container {

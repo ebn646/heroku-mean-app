@@ -7,4 +7,8 @@ angular.module('movieSearchApp')
         {api_key: apikey, callback: 'JSON_CALLBACK'},
         {get: {method: 'JSONP', requestType: 'json'}}
     );
+}).factory('CarouselService', function($resource){
+    return $resource('/api/movies/misc', {}, {
+
+    });
 })

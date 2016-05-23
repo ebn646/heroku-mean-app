@@ -1,23 +1,39 @@
 <div myslider>
-    <header>SEARCH MOVIES</header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="../../images/rottentomatoes_logo_40.png">
+                </a>
+            </div>
+        </div>
+    </nav>
         <div ui-view="carousel"></div>
-        <form novalidate>
-            Search:<br>
-            <input type="text" ng-model="query"><br>
-            <button ng-click='search()'>SEARCH</button>
-        </form>
     </div>
 </div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="input-group">
+            <input type="text" class="form-control" ng-model="query" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" ng-click='search()' type="button">Go!</button>
+      </span>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
 <h3>Results</h3>
-<div class="container cf">
-    <div>
-        <ul>
-            <li ng-repeat="movie in movies">
-                <a href="#/detail/{{movie.id}}" ui-sref="detail({ id: movie.id })">
-                    <img ng-src="https://image.tmdb.org/t/p/w92/{{movie.poster_path}}" alt="">
-                    {{movie.title}}{{}}
-                </a>
-            </li>
-        </ul>
+<div class="row">
+    <div class="container cf">
+        <div>
+            <ul class="list-group">
+                <li class="list-grou-item" ng-repeat="movie in movies">
+                    <a href="#/detail/{{movie.id}}" ui-sref="detail({ id: movie.id })">
+                        <img ng-src="https://image.tmdb.org/t/p/w92/{{movie.poster_path}}" alt="">
+                        {{movie.title}}{{}}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
 </div>
