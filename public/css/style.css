@@ -337,8 +337,13 @@ Buttons
       opacity: 0.75; }
 
 body {
-  background: #f5f5f5;
-  color: black; }
+  background: #708090;
+  color: black;
+  color:white;
+}
+input,button{
+  color:black;
+}
 
 iframe {
   display: block; }
