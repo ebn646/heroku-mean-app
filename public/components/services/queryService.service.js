@@ -30,5 +30,6 @@ angular.module('movieSearchApp')
       });
 
       return deferred.promise;
+    }
 
   }
